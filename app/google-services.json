@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148189526253",
+    "project_id": "ssrom1980",
+    "storage_bucket": "ssrom1980.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148189526253:android:b7a1c5a865537a211d74e4",
+        "android_client_info": {
+          "package_name": "com.example.task_046"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Ea1muns1lMxfLheCki2H4KsemGG9oYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
