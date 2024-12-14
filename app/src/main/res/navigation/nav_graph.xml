@@ -21,7 +21,7 @@
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in">
         <action
-            android:id="@+id/action_signInFragment_to_emailFragment"
+            android:id="@+id/action_signInFragment_to_contactFragment"
             app:destination="@+id/emailFragment"
             app:enterAnim="@anim/side_in_right"
             app:exitAnim="@anim/side_out_left" />
@@ -34,11 +34,11 @@
 
     <fragment
         android:id="@+id/emailFragment"
-        android:name="com.example.task_046.emailFragment"
+        android:name="com.example.task_046.contactFragment"
         android:label="fragment_email"
-        tools:layout="@layout/fragment_email" >
+        tools:layout="@layout/fragment_contact" >
         <action
-            android:id="@+id/action_emailFragment_to_signUpFragment"
+            android:id="@+id/action_contactFragment_to_signUpFragment"
             app:destination="@+id/signUpFragment"
             app:enterAnim="@anim/side_out_right"
             app:exitAnim="@anim/side_in_left" />

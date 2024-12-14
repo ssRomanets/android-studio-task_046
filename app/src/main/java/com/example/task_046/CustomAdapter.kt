@@ -7,24 +7,26 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(private val emailes: MutableList<EmailViewModal>):
-    RecyclerView.Adapter<CustomAdapter.EmailViewHolder>(){
+class CustomAdapter(private val contacts: MutableList<ContactViewModal>):
+    RecyclerView.Adapter<CustomAdapter.ContactViewHolder>(){
 
-    class EmailViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    class ContactViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val imageViewIV: ImageView = itemView.findViewById(R.id.imageViewIV)
-        val emailTV: TextView = itemView.findViewById(R.id.emailTV)
+        val nameTV: TextView = itemView.findViewById(R.id.nameTV)
+        val telephoneTV: TextView = itemView.findViewById(R.id.telephoneTV)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EmailViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
-        return EmailViewHolder(itemView)
+        return ContactViewHolder(itemView)
     }
 
-    override fun getItemCount() = emailes.size
+    override fun getItemCount() = contacts.size
 
-    override fun onBindViewHolder(holder: EmailViewHolder, position: Int) {
-        val email = emailes[position]
-        holder.imageViewIV.setImageResource(email.icon)
-        holder.emailTV.text = email.email
+    override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
+        val contact = contacts[position]
+        holder.imageViewIV.setImageResource(R.drawable.phone_android_ic)
+        holder.nameTV.text = contact.name
+        holder.telephoneTV.text = contact.telephone
     }
 }

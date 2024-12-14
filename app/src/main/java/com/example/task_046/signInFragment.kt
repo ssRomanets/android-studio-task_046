@@ -45,14 +45,14 @@ class signInFragment : Fragment() {
         }
     }
 
-    private fun login(view: View,) {
+    private fun login(view: View) {
         val email = binding.emailET.text.toString()
         val pass = binding.passwordET.text.toString()
 
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(activity as AppCompatActivity) {
             if (it.isSuccessful) {
                 Toast.makeText(context, "Успешно вошел в систему", Toast.LENGTH_SHORT).show()
-                view.findNavController().navigate(R.id.action_signInFragment_to_emailFragment)
+                view.findNavController().navigate(R.id.action_signInFragment_to_contactFragment)
             } else {
                 Toast.makeText(context, "Не удалось войти в систему", Toast.LENGTH_SHORT).show()
                 binding.RedirectSignUpTV.visibility = View.VISIBLE

@@ -72,6 +72,5 @@ class signUpFragment : Fragment() {
                 Toast.makeText(context, "Регистрация не прошла", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
 }

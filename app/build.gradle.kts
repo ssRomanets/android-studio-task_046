@@ -48,8 +48,10 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation("com.google.firebase:firebase-database-ktx:21.0.0")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
